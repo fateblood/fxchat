@@ -8,5 +8,6 @@ namespace JsonPropertyTest.AutoMap
 {
     class Class1
     {
+        public string name { get; set; }
     }
 }
