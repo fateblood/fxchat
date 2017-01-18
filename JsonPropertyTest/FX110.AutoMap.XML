@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FX110.AutoMap</name>
+    </assembly>
+    <members>
+        <member name="M:FX110.AutoMap.AutoMapperServiceProvider.RegisterMapper(System.String)">
+            <summary>
+            获取指定程序集里面的配置文件
+            </summary>
+            <param name="AssemblyName"></param>
+        </member>
+        <member name="T:FX110.AutoMap.FX110AutoMapProfile`2">
+            <summary>
+            AutoMapper配置映射文件
+            </summary>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.Include(System.Type,System.Type)">
+            <summary>
+            多层级包含映射创建
+            </summary>
+            <param name="appendSource"></param>
+            <param name="appendDesc"></param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberMap(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Action{AutoMapper.IMemberConfigurationExpression{`0,`1,System.Object}})">
+            <summary>
+            成员映射
+            </summary>
+            <param name="FilterExpress">待转换的成员</param>
+            <param name="Action">条件</param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberIgnore(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+            <summary>
+            映射的时候排除掉指定的字段不进行映射
+            </summary>
+            <param name="FilterExpress"></param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberUseDefault(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Object)">
+            <summary>
+            映射时指定字段使用默认值
+            </summary>
+            <param name="FilterExpress"></param>
+            <param name="CustomValue"></param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberCondition(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Func{`0,System.Boolean})">
+            <summary>
+            映射时必须满足某些条件才允许进行映射处理
+            </summary>
+            <param name="FilterExpress">映射字段表达式</param>
+            <param name="condition">条件</param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberResolve(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},AutoMapper.IValueResolver{`0,`1,System.Object})">
+            <summary>
+            使用值转换器
+            </summary>
+            <param name="FilterExpress"></param>
+            <param name="valueResolver"></param>
+        </member>
+        <member name="M:FX110.AutoMap.FX110AutoMapProfile`2.ForMemberResolveNullValue(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Object)">
+            <summary>
+            空值替换
+            </summary>
+            <param name="FilterExpress"></param>
+            <param name="NullValue"></param>
+        </member>
+        <member name="M:FX110.AutoMap.IAutoMapperService.RegisterMapper(System.String)">
+            <summary>
+            注册所有mapper
+            </summary>
+            <param name="AssemblyName"></param>
+        </member>
+        <member name="M:FX110.AutoMap.IAutoMapperService.Map``2(``0)">
+            <summary>
+            获得映射文件
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TDestination"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
