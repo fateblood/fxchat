@@ -67,6 +67,7 @@
     <Compile Include="ChatMsgToCacheModelMap.cs" />
     <Compile Include="ChatReceiverToRedisModel.cs" />
     <Compile Include="ChatSenderToRedisModel.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
